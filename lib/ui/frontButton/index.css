@@ -36,9 +36,9 @@
   transition: all .25s ease-in-out;
 }
 
-.mu-icon-wrapper i.icon > i[class^="icon-"] { 
+.mu-icon-wrapper i.icon > i[class^="icon-"] {
   position: relative;
-  left: -16px;
+  /*left: -16px;*/
 
   display: inline-block;
   width: 100%;

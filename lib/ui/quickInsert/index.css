@@ -72,14 +72,14 @@
 
   color: var(--iconColor);
 
-  opacity: .5;
+  /*opacity: .5;*/
 
   transition: all .25s ease-in-out;
 }
 
 .mu-quick-insert .icon-container > i.icon > i[class^="icon-"] {
   position: relative;
-  left: -20px;
+  /*left: -20px;*/
 
   display: inline-block;
   width: 100%;

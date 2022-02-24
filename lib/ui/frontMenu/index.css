@@ -52,7 +52,7 @@
 .mu-front-menu li .icon-wrapper i.icon {
   position: relative;
 
-  display: flex;
+  display: inline-block;
   width: 18px;
   height: 18px;
   overflow: hidden;
@@ -60,9 +60,9 @@
   color: var(--iconColor);
 }
 
-.mu-front-menu li .icon-wrapper i.icon > i[class^="icon-"] { 
+.mu-front-menu li .icon-wrapper i.icon > i[class^="icon-"] {
   position: relative;
-  left: -18px;
+  /*left: -18px;*/
 
   display: inline-block;
   width: 100%;

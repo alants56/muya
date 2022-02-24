@@ -51,9 +51,9 @@
   transition: all .25s ease-in-out;
 }
 
-.mu-footnote-tool .icon-wrapper i.icon > i[class^="icon-"] { 
+.mu-footnote-tool .icon-wrapper i.icon > i[class^="icon-"] {
   position: relative;
-  left: -14px;
+  /*left: -14px;*/
 
   display: inline-block;
   width: 100%;

@@ -69,9 +69,9 @@
   transition: all .25s ease-in-out;
 }
 
-.mu-link-tools li.item .icon-wrapper i.icon > i[class^="icon-"] { 
+.mu-link-tools li.item .icon-wrapper i.icon > i[class^="icon-"] {
   position: relative;
-  left: -18px;
+  /*left: -18px;*/
 
   display: inline-block;
   width: 100%;

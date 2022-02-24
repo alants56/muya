@@ -36,53 +36,53 @@ Muya.use(TableTools)
 Muya.use(PreviewTools)
 
 const container = document.querySelector('#editor')
-const undoBtn = document.querySelector('#undo')
-const redoBtn = document.querySelector('#redo')
-const searchInput = document.querySelector('#search')
-const previousBtn = document.querySelector('#previous')
-const nextBtn = document.querySelector('#next')
-const replaceInput = document.querySelector('#replace')
-const singleBtn = document.querySelector('#single')
-const allBtn = document.querySelector('#all')
+// const undoBtn = document.querySelector('#undo')
+// const redoBtn = document.querySelector('#redo')
+// const searchInput = document.querySelector('#search')
+// const previousBtn = document.querySelector('#previous')
+// const nextBtn = document.querySelector('#next')
+// const replaceInput = document.querySelector('#replace')
+// const singleBtn = document.querySelector('#single')
+// const allBtn = document.querySelector('#all')
 const muya = new Muya(container, { markdown: DEFAULT_MARKDOWN, disableHtml: true })
 
 window.muya = muya
 
 muya.init()
 
-undoBtn.addEventListener('click', () => {
-  muya.undo()
-})
-
-redoBtn.addEventListener('click', () => {
-  muya.redo()
-})
-
-searchInput.addEventListener('input', (event) => {
-  const value = event.target.value
-
-  muya.search(value, { isRegexp: true })
-})
-
-previousBtn.addEventListener('click', () => {
-  muya.find('previous')
-})
-
-nextBtn.addEventListener('click', () => {
-  muya.find('next')
-})
-
-singleBtn.addEventListener('click', () => {
-  muya.replace(replaceInput.value, { isSingle: true, isRegexp: true })
-})
-
-allBtn.addEventListener('click', () => {
-  muya.replace(replaceInput.value, { isSingle: false })
-})
+// undoBtn.addEventListener('click', () => {
+//   muya.undo()
+// })
+//
+// redoBtn.addEventListener('click', () => {
+//   muya.redo()
+// })
+//
+// searchInput.addEventListener('input', (event) => {
+//   const value = event.target.value
+//
+//   muya.search(value, { isRegexp: true })
+// })
+//
+// previousBtn.addEventListener('click', () => {
+//   muya.find('previous')
+// })
+//
+// nextBtn.addEventListener('click', () => {
+//   muya.find('next')
+// })
+//
+// singleBtn.addEventListener('click', () => {
+//   muya.replace(replaceInput.value, { isSingle: true, isRegexp: true })
+// })
+//
+// allBtn.addEventListener('click', () => {
+//   muya.replace(replaceInput.value, { isSingle: false })
+// })
 
 muya.on('json-change', (changes) => {
   // console.log(JSON.stringify(muya.getState(), null, 2))
-  // console.log(muya.getMarkdown())
+  console.log(muya.getMarkdown())
   // console.log(JSON.stringify(changes, null, 2))
 })
 
