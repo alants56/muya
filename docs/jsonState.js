@@ -107,7 +107,7 @@ const doc = [
   ]
 },
 /**
- * GitHub Flavored Markdown Spec 
+ * GitHub Flavored Markdown Spec
  */
 /**
  * Leaf Blocks
@@ -141,7 +141,7 @@ const doc = [
     {
       name: 'task-list-item',
       meta: {
-        checked: true // true or false
+        checked: false // true or false
       },
       children: [{
         name: 'paragraph',
@@ -151,7 +151,7 @@ const doc = [
   ]
 },
 /**
- * Extra Markdown Spec 
+ * Extra Markdown Spec
  */
 /**
  * Leaf Blocks
